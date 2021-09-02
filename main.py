@@ -8,7 +8,7 @@ screen.bgcolor("black")
 screen.title("Snack Game")
 screen.tracer(0)
 
-# snake = Snake()
+snake = Snake()
 
 screen.listen()
 screen.onkeypress(snake.up, "Up")
