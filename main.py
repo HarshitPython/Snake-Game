@@ -10,11 +10,11 @@ screen.tracer(0)
 
 # snake = Snake()
 
-# screen.listen()
-# screen.onkeypress(snake.up, "Up")
-# screen.onkeypress(snake.down, "Down")
-# screen.onkeypress(snake.right, "Right")
-# screen.onkeypress(snake.left, "Left")
+screen.listen()
+screen.onkeypress(snake.up, "Up")
+screen.onkeypress(snake.down, "Down")
+screen.onkeypress(snake.right, "Right")
+screen.onkeypress(snake.left, "Left")
 
 # game_is_on = True
 
