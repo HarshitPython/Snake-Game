@@ -38,6 +38,15 @@ class Snake:
 
         self.head.forward(MOVE_DISTANCE)
         
+        if self.head.heading() == RIGHT:
+            self.head.shape("snake_head_right.gif")
+        elif self.head.heading() == LEFT:
+            self.head.shape("snake_head.gif")
+        elif self.head.heading() == UP:
+            self.head.shape("snake_head_up.gif")
+        elif self.head.heading() == DOWN:
+            self.head.shape("snake_head_down.gif")   
+        
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)    
