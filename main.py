@@ -4,9 +4,16 @@ import time
 
 screen = Screen()
 screen.setup(width=600, height=600)
-screen.bgcolor("black")
-screen.title("Snack Game")
+screen.bgpic("background.gif")
+screen.title("Snake Game")
 screen.tracer(0)
+screen.register_shape("apple.gif")
+screen.register_shape("snake.gif")
+# screen.register_shape("try_again.gif")
+screen.register_shape("snake_head.gif")
+screen.register_shape("snake_head_right.gif")
+screen.register_shape("snake_head_up.gif")
+screen.register_shape("snake_head_down.gif")
 
 snake = Snake()
 
