@@ -14,6 +14,8 @@ class Snake:
         self.segments = []
         self.create_snake()
         self.head = self.segments[0]
+        self.head.shape("snake_head_right.gif")
+        self.head.penup()
 
     def create_snake(self):
         for position in STARTING_POSITIONS:
