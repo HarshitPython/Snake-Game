@@ -15,6 +15,8 @@ screen.register_shape("snake_head_up.gif")
 screen.register_shape("snake_head_down.gif")
 
 snake = Snake()
+food = Food()
+score = Score()
 
 screen.listen()
 screen.onkeypress(snake.up, "Up")
