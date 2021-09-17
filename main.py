@@ -35,10 +35,10 @@ def snake_game():
     snake.move()
     
     #Detect collision with food
-    if snake.head.distance(food) < 20:
-        food.refresh()
-        snake.extend()
-        score.increase_score()
+   if snake.head.distance(food) < 15:
+            food.new_food()
+            snake.grow_snake()
+            scoreboard.increase_score()
         
 
     #Detect collision with Wall
