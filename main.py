@@ -26,9 +26,9 @@ screen.onkeypress(snake.down, "Down")
 screen.onkeypress(snake.right, "Right")
 screen.onkeypress(snake.left, "Left")
 
-game_is_on = True
-
-while game_is_on:
+def snake_game():
+    game_is_on = True
+    while game_is_on:
     screen.update()
     time.sleep(0.1)
 
