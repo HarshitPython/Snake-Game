@@ -1,7 +1,7 @@
 from turtle import Turtle, Screen
 from snake import Snake
 from food import Food
-from score import Score
+from scoreboard import Scoreboard 
 import time
 
 screen = Screen()
@@ -18,7 +18,7 @@ screen.register_shape("snake_head_down.gif")
 
 snake = Snake()
 food = Food()
-score = Score()
+scoreboard = Scoreboard ()
 
 screen.listen()
 screen.onkeypress(snake.up, "Up")
