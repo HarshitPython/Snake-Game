@@ -35,7 +35,7 @@ class ScoreBoard(Turtle):
 
     
         
-        self.write(f"GAME OVER | Final Score: {self.score}", align=ALIGNMENT, font=FONT)
+        
 
     def increase_score(self):
         self.score += 1
